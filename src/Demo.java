@@ -21,7 +21,7 @@ public class Demo {
             Statement stmt = con.createStatement();
 
             // Step 4: Define the SQL query to create table
-            String sql = "CREATE TABLE employee (" +
+            String sql = "CREATE TABLE student (" +
                     "id INT PRIMARY KEY AUTO_INCREMENT," +
                     "name VARCHAR(50)," +
                     "email VARCHAR(100))";
@@ -29,11 +29,11 @@ public class Demo {
             // Step 5: Execute the SQL query
             stmt.executeUpdate(sql);
 
-            System.out.println("Table 'students' created successfully!");
+            System.out.println("Table 'student' created successfully!");
 
-            String insert1 = "INSERT INTO employee (name, email) VALUES ('BharathKumar', 'bharath9502@gmail.com')";
-            String insert2 = "INSERT INTO employee (name, email) VALUES ('ManiVardhan', 'manivardhan1810@gmail.com')";
-            String insert3 = "INSERT INTO employee (name, email) VALUES ('AravindSwamy', 'aravindswamy@gmail.com')";
+            String insert1 = "INSERT INTO student (name, email) VALUES ('BharathKumar', 'bharath9502@gmail.com')";
+            String insert2 = "INSERT INTO student (name, email) VALUES ('ManiVardhan', 'manivardhan1810@gmail.com')";
+            String insert3 = "INSERT INTO student (name, email) VALUES ('AravindSwamy', 'aravindswamy@gmail.com')";
 
             stmt.executeUpdate(insert1);
             stmt.executeUpdate(insert2);
